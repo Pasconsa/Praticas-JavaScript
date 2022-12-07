@@ -1,10 +1,18 @@
 <meta charset="UTF-8">
-<script>    
-    document.write("Paulo tem " + (18 +20) + " anos de idade" + "<br>" );
-    document.write("ele nasceu em " + (2022- 38) + " há muito tempo");
+<script> 
 
-    document.write("<br>" + "<br>");
- 
+function pulaLinha ()  {   
+    document.write("<br>")}; 
+
+    function mostra (escreve){
+            document.write(escreve);
+            pulaLinha ();
+            pulaLinha ();
+    }
+
+    mostra ("Paulo tem " + (18 +20) + " anos de idade");
+
+    mostra("ele nasceu em " + (2022- 38) + " há muito tempo");
 
     var idadePaulo = 40;
     var idadePedro = 25;
