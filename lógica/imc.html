@@ -21,11 +21,11 @@
         mostra("O imc calculado é " + imc);
     }
 
-//maneira com function CalculaImc
+// 02 maneira com function CalculaImc
 
 calculaImc(1.86 , 97);
 
-    //Maneira sem function
+    //01 Maneira sem function
 var pesoSaulo = 97;
 var alturaSaulo = 1.86;
 var imcSaulo = pesoSaulo / (alturaSaulo * alturaSaulo);
@@ -33,6 +33,20 @@ var imcSaulo = pesoSaulo / (alturaSaulo * alturaSaulo);
 mostra("O imc de Saulo é " + imcSaulo);
 
 
+
+//03 Maneira com retorno de função
+
+function calcularImc (altura , peso)
+{
+    var imc = peso/ (altura * altura)
+        return imc;
+}
+
+var imcSaulo = calcularImc(1.86 , 97);
+var imcJoao = calcularImc(1.92 , 95);
+
+mostra(imcSaulo);
+mostra(imcJoao);
     
 
 
