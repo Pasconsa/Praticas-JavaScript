@@ -49,7 +49,14 @@ mostra(imcSaulo);
 mostra(imcJoao);
     
 
+//Utilizando o programado prompt(auto menssagem) interagindo com usuário
 
+var nome = prompt ("informe seu nome");
+var alturaInformado = prompt ("informe sua altura");
+var pesoInformado = prompt ("informe seu peso");
 
+var calcImc = pesoInformado / (alturaInformado * alturaInformado);
+
+document.write ("Imc calculado de " + nome + " é " + calcImc);
 
 </script>
