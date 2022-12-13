@@ -1,0 +1,29 @@
+
+
+<meta charset = "UTF-8">
+
+<script>
+
+// Jogo Adivinha numero
+
+function pulaLinha (){
+    document.write ("<br>");
+    document.write ("<br>");
+}
+
+function mostra (frase) {
+    document.write (frase);
+    pulaLinha();
+}
+
+var numeroEscolhido = Math.round(Math.random() * 10);
+
+var numero = parseInt(prompt("Digite um numero de 0 a 10"));
+
+if( numero == numeroEscolhido) {
+    mostra("parabéns voce acertou!!");
+}else{
+    mostra("você errou o numero é  " + numeroEscolhido);
+}
+
+</script>
