@@ -1,0 +1,30 @@
+<meta charset = "UTF-8">
+
+<script>
+
+function pulaLinha (){
+    document.write ("<br>");
+    document.write ("<br>");
+}
+
+function mostra (frase) {
+    document.write (frase);
+    pulaLinha();
+}
+
+var anoCopa = 1930;
+var anoAtual = parseInt(prompt("Digite o ano "));
+
+while ( anoCopa <= anoAtual){
+    
+    
+    if(anoCopa == 1942 || anoCopa == 1946){
+        anoCopa = anoCopa + 4;
+      } else {
+        mostra("Teve copa em " + anoCopa);
+      }
+      anoCopa = anoCopa + 4 ;
+}
+
+
+</script>
